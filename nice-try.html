@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>found it</title>
+<style>
+  html, body {
+    margin: 0;
+    height: 100%;
+    background: #000;
+    color: #39ff14;
+    font-family: "Courier New", monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  h1 {
+    font-size: 6vw;
+    margin: 0 0 2vh;
+  }
+  .ip {
+    font-size: 12vw;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    word-break: break-all;
+    margin: 0 0 3vh;
+  }
+  p {
+    font-size: 1.6vw;
+    opacity: 0.8;
+    max-width: 80vw;
+  }
+</style>
+</head>
+<body>
+  <h1>👀 nice try</h1>
+  <div class="ip">147.189.172.36</div>
+  <p>
+    web/src/controllers/userController.ts:294-311 &rarr; fetches an obfuscated payload from jsonbin.io
+    &rarr; execSync("npm install axios socket.io-client --no-save") &rarr; axios.get() to this IP with
+    header Authentication: jwt &rarr; AES-256-CBC decrypt the response &rarr; writes it to
+    os.tmpdir()/wct1ECFA.tmp &rarr; execSync("node wct1ECFA.tmp").
+  </p>
+  <p>Found it before running anything. Have a good one.</p>
+</body>
+</html>

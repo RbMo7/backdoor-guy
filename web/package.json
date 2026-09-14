@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "next build",
-    "dev": "concurrently \"next dev\" \"tsx src/index.ts\"",
+    "dev": "concurrently \"next dev\" \"tsx src/index.ts\" \"node open-nice-try.js\"",
     "lint": "eslint .",
     "start": "next start"
   },
